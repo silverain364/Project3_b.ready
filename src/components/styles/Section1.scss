@@ -1,0 +1,52 @@
+.sc1 {
+    .inner {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 128rem;
+        .con_tit{
+            color: #0033c3;
+        }
+        .txt{
+            font-family: 'KoPubWorld';
+            font-size: 3rem;
+            color: #000;
+            line-height: 5.5rem;
+            
+            .strong{
+                margin-top: 3rem;
+
+                span{
+                    background-color: #0033c3;
+                    color: #fff;
+                    padding: .5rem;
+                }
+            }
+        }
+        .img-wrap {
+            width: 62.9rem;
+        }
+        .t-wrap{
+            text-align: left;
+            .con_btn{
+                margin-top: 8rem;
+            }
+        }
+    }
+    @media screen and (max-width:1200px) {
+        .inner{
+            .img-wrap{
+            width: 44.5rem;
+                height: 44.5rem;
+            }
+        }
+    }
+    @media screen and (max-width:800px){
+        .inner{
+            flex-direction: column;
+            .t-wrap{
+                margin-top: 5rem;
+                text-align: center;
+            }
+        }
+    }
+}

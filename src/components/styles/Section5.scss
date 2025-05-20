@@ -1,0 +1,37 @@
+.sc5{
+    background-color: #0033c3;
+    padding: 10rem 0;
+    .inner{
+        max-width: 128rem;
+        display: block;
+        .con_tit {
+            color:#fff;
+            font-family: "TF Ponetone Expanded";
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .s5_lst {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            gap: 1rem;
+            li{
+                width: 15rem;
+                height: 15rem;
+                overflow: hidden;
+            }
+        }
+
+        .instagramLogo img{
+            margin-top: 2rem;
+        }
+    }
+
+    @media screen and (max-width:1111px) {
+        .inner{
+            .s5_lst{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

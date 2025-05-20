@@ -1,0 +1,145 @@
+.sc3 {
+  // padding: 13rem 13.8rem;
+
+  .s3_slider {
+    position: relative;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 18.2rem;
+
+      .banner-tit {
+        font-size: 5rem;
+        color: #0033c3;
+        font-family: 'KoPubWorld';
+        font-weight: 600;
+      }
+
+      .banner-desc {
+        font-size: 2.5rem;
+      }
+
+      .con_btn {
+        text-transform: uppercase;
+        background-color: #0033c3;
+        color: #fff;
+
+        &:hover {
+          background-color: transparent;
+          color: #0033c3;
+        }
+      }
+
+      img {
+        width: 60rem;
+        height: 60rem;
+      }
+
+    }
+
+    .s3_nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      position: absolute;
+      padding: 0 5rem;
+      bottom: 50%;
+      transform: translateY(50%);
+      left: 0;
+      z-index: 1;
+
+      .arr_prev,
+      .arr_next {
+        cursor: pointer;
+        width: 3.8rem;
+        height: 7.6rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      .arr_prev {
+        background-image: url('/img/pd_slider_prev_arrow.svg');
+      }
+
+      .arr_next {
+        background-image: url('/img/pd_slider_next_arrow.svg');
+      }
+    }
+  }
+
+  @media screen and (max-width:1300px) {
+    .s3_slider {
+      .inner {
+        padding: 0 14.5rem;
+
+        .banner-tit {
+          font-size: 4.5rem;
+        }
+
+        .banner-desc {
+          font-size: 2rem;
+        }
+
+        img {
+          width: 35rem;
+          height: 35rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:950px) {
+    .s3_slider {
+      .inner {
+        padding: 0 5%;
+        flex-direction: column-reverse;
+        gap: 6rem;
+
+        .banner-txt {
+          text-align: center;
+
+          .con_btn {
+            margin-top: 5rem;
+          }
+        }
+      }
+
+      .s3_nav {
+        transform: translateY(-60%);
+        bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:540px) {
+    .s3_slider {
+      .inner {
+        .banner-tit {
+          font-size: 2.5rem;
+        }
+
+        .banner-desc {
+          font-size: 1.2rem;
+        }
+
+        img {
+          width: 30rem;
+          height: 30rem;
+        }
+      }
+
+      .s3_nav {
+        .arr_prev,
+        .arr_next {
+          transform: translateY(-50%);
+          width: 2rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
+
+}

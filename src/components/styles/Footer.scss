@@ -1,0 +1,210 @@
+footer {
+    border-top: .1rem solid #000000;
+    position: relative;
+    z-index: 0;
+    .inner {
+      padding: 15rem 10rem 0 2rem;
+      max-width: 172rem;
+      justify-content: space-between;
+  
+      &:last-child{
+        padding: 0 10rem 5rem 2rem;
+        .foot_txt2{
+          display: none;
+        }
+      }
+  
+      .left {
+        h3 {
+          margin-bottom: 3rem;
+        }
+      }
+      .center {
+        display: flex;
+        >li {
+          padding-right:5rem;
+          margin-right: 5rem;
+          >a {
+            font-size: 2rem;
+            color:#0033c3;
+            margin-bottom: 2.5rem;
+            display: block;
+            font-family: "TF Ponetone Expanded";
+          }
+          ul>li>a {
+            display: block;
+            margin-top: 1.2rem;
+            font-size: 1.5rem;
+            font-weight: 100;
+            color: #6f6f6f;
+          }
+        }
+      }
+      .right{
+        text-align: right;
+        .foot_txt3{
+  
+        }
+       .tel {
+        font-size: 3rem;
+        color: #0033c3;
+        font-weight: 700;
+        margin-bottom: 1.7rem;
+       } 
+      }
+  
+      .info a {
+        display: inline-block;
+        margin-right: 2.5rem;
+        font-size: 1.3rem;
+        color:#6f6f6f
+      }
+      .sns a{
+        display: inline-block;
+        width: 3rem;
+        margin-left: 2rem;
+        img {
+          width: 100%;
+        }
+      }
+  
+  
+      .foot_txt1{
+        font-size: 1.3rem;
+        color: #5b5b5b;
+        line-height: 2.5rem;
+      }
+  
+      .foot_txt2{
+        font-size: 1.2rem;
+        color: #0033c3;
+        line-height: 1.9rem;
+        padding: 3rem 0 7rem;
+      }
+      
+      .foot_txt3{
+        font-size: 2rem;
+        font-family: 'TF Ponetone Expanded';
+        color: #0033c3;
+        margin-bottom: 2.5rem;
+        
+      }
+      .foot_txt4{
+        font-size: 1.4rem;
+        color: #585858;
+        line-height: 2.2rem;
+  
+      }
+      .talk_btn{
+        display: inline-block;
+        border: .1rem solid #0033c3;
+        padding: 1.4rem 7.2rem 1.3rem;
+        margin-top: 2rem;
+        border-radius: 6rem;
+        font-size: 1.3rem;
+        color: #0033c3;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    @media screen and (max-width:1279px) {
+      .inner{
+        padding: 10rem 10rem 0 3rem;
+        .center > li {
+          margin-right: 1rem;
+          padding-right: 1rem;
+        }
+
+        &:last-child{
+          padding: 0 23rem 7rem;
+        }
+        .right{
+          text-align: left;
+        }
+      }
+    }
+     @media screen and (max-width:1111px) {
+    .inner {
+      flex-direction: column;
+      padding:10rem 1.5rem 1.5rem;
+
+
+      .right {
+        border-top:.1rem solid #ccc;
+        border-bottom:.1rem solid #ccc;
+        margin-top: 3rem;
+
+
+        .foot_txt3{
+          padding: 2rem 0;
+          position: relative;
+          margin-bottom: 0;
+          span {
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+            position: absolute;
+            right: 1rem;
+            top: calc(50% - .7rem);
+            &::after ,
+            &::before {
+              display: block;
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: .2rem;
+              top: 49%;
+              background-color: #dc272d;
+              transition: all .3s;
+            }
+            &::before {
+              transform: rotate(90deg);
+            }
+          }
+        }
+        .hidden {
+
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height .4s ease;
+        }
+        .foot_txt3.open {
+          span::before{
+            transform: rotate(0deg);
+            opacity: 0;
+
+          }
+        }
+        
+        .foot_txt3.open + .hidden{
+          max-height: 500px;
+          padding-bottom: 2rem;
+        }
+
+      }
+
+      &:first-child {
+        .foot_txt2 {
+          display: none;
+        }
+      }
+
+
+      &:last-child {
+        padding: 0 1.5rem 7rem 1.5rem;
+        .foot_txt2 {
+          display: block;
+          padding:3rem 0;
+        }
+        .sns a:first-child{
+          margin-left: 0;
+
+        }
+      }
+
+      .center {
+        display: none;
+      }
+    }
+  }
+  }

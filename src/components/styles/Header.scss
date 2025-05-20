@@ -1,0 +1,112 @@
+header {
+  position: fixed;
+  top: 4rem;
+  height: 10.5rem;
+  width: 100%;
+  // background-color: sandybrown;
+  transition: all .3s;
+  z-index: 3;
+
+  &.scroll {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  }
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    padding: 0 5rem;
+
+    .mob_btn{
+      display: none;
+      cursor: pointer;
+    }
+
+    h1.logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    nav ul,
+    .h_right {
+      display: flex;
+    }
+
+    nav ul {
+      li {
+        a {
+          display: block;
+          margin-right: 4rem;
+          font-size: 1.8rem;
+          font-weight:600;
+          color: #000;
+          position: relative;
+          cursor: pointer;
+
+          &:after {
+            display: block;
+            content: "";
+            width: 0%;
+            height: .2rem;
+            background-color: #0033c3;
+            position: absolute;
+            bottom: -.2rem;
+          }
+
+          &:hover{
+            color: #0033c3;
+          }
+
+          &:hover:after {
+            width: 100%;
+
+          }
+        }
+
+      }
+    }
+
+    .h_right {
+      li {
+        margin-left: 2rem;
+        position: relative;
+        &.cart{
+          &:after{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            content: "0";
+            font-size: 1.5rem;
+            position: absolute;
+            width: 2.6rem;
+            height: 2.6rem;
+            border-radius: 50%;
+            background-color: #0033C3;
+            right: -2rem;
+            top: -1rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:1111px) {
+    height: 6.3rem;
+    .inner{
+      padding: 0 2rem;
+      .mob_btn{
+        display: block;
+      }
+      h1.logo{
+        width: 12.4rem;
+      }
+      .h_right li:not(.cart),
+      nav{
+        display: none;
+      }
+    }
+  }
+}

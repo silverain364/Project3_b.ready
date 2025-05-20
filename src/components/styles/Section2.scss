@@ -1,0 +1,208 @@
+.sc2 {
+    .inner {
+        text-align: center;
+        flex-direction: column;
+
+        .con_tit,
+        .con_tit span {
+            color: #0033c3;
+            font-family: 'TF Ponetone Expanded';
+        }
+
+        .txt_2 {
+            color: #000;
+            font-family: 'TF Ponetone Expanded';
+        }
+
+        .s2_slider {
+            margin-top: 7rem;
+            padding: 4rem 0;
+            max-width: 128rem;
+
+            a {
+                display: flex;
+                justify-content: center;
+
+                .rel {
+                    width: 38rem;
+                    border: .15rem solid #000;
+                }
+
+                .s2-btn {
+                    display: inline-flex;
+                    border: .1rem solid #009bde;
+                    font-size: 1.3rem;
+                    padding: 1.3rem 1.8rem 1.1rem;
+                    border-radius: 6rem;
+                    font-weight: 500;
+
+                }
+
+                .info-wrap {
+
+                    height: 22rem;
+                    padding: 4.5rem 0;
+
+                    .category {
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 2rem;
+
+                        .icon {
+                            font-size: 2rem;
+                            line-height: 3.4rem;
+                            font-family: 'TF Ponetone Expanded';
+                            text-transform: uppercase;
+                            width: 9.5rem;
+                            height: 3.4rem;
+
+                            &.best {
+                                background-color: #0033c3;
+                                color: #fff;
+                            }
+
+                            &.new {
+                                border: .2rem solid #0033c3;
+                                color: #0033c3;
+                            }
+
+                            &.none {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .name {
+                        font-size: 2rem;
+                        line-height: 1;
+                        color: #231f20;
+                        font-weight: 500;
+                        letter-spacing: 0;
+                        font-family: 'KoPubWorld';
+                        margin-top: 2.5rem;
+                    }
+
+                    .price-wrap {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .5rem;
+                        font-family: 'malgun';
+                        margin-top: 1rem;
+
+                        .percent {
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            color: #6F89D1
+                        }
+
+                        .saleprice {
+                            font-size: 2rem;
+                        }
+
+                        .price {
+                            font-size: 1.5rem;
+                            color: #b6b6b6;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+
+                .img-wrap {
+                    width: 100%;
+                    height: 38rem;
+                    overflow: hidden;
+                    border-bottom: .15rem solid #000;
+                }
+
+            }
+
+            .swiper-pagination-progressbar {
+                width: 122rem;
+                margin: 3rem auto 0;
+                position: static;
+                background-color: #CBD9FF;
+
+                .swiper-pagination-progressbar-fill {
+                    background-color: #0033C3;
+                }
+            }
+        }
+
+        .custom-prev,
+        .custom-next {
+            width: 3.5rem;
+            height: 6.7rem;
+            position: absolute;
+            z-index: 3;
+            top: calc(50% + 13rem);
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .custom-prev {
+            left: -2rem;
+            background: url(/img/pd_slide_arrow_prev.svg) no-repeat center/contain;
+        }
+
+        .custom-next {
+            right: -2rem;
+            background: url(/img/pd_slide_arrow_next.svg) no-repeat center/contain;
+        }
+
+        @media screen and (max-width:515px) {
+            .con_tit span,
+            .txt_2 {
+                display: none;
+            }
+
+            .s2_slider{
+                margin-top: 1rem;
+                width: 90rem;
+                a{
+                    height: 41.6rem;
+                    width: 26.3rem;
+                    .img-wrap{
+                        width: 100%;
+                        height: 26.3rem;
+                    }
+                    .info-wrap{
+                        padding: 2rem 0;
+                        .category{
+                            .icon{
+                                width: 6.3rem;
+                                height: 2.4rem;
+                                font-size: 1.4rem;
+                                line-height: 2.5rem;
+                                &.new{
+                                    line-height: 2.1rem;
+                                }
+                            }
+                        }
+                        .name{
+                            font-size: 1.5rem;
+                        }
+
+                        .price-wrap {
+
+                        .percent {
+                            font-size: 1.7rem;
+                        }
+
+                        .saleprice {
+                            font-size: 1.4rem;
+                        }
+
+                        .price {
+                            font-size: 1rem;
+                        }
+                    }
+                    }
+                }
+            }
+        }
+    }
+}

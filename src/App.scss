@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'KoPubWorld';
+  src: url('/fonts/KoPubWorld Dotum Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'malgun';
+  src: url('/fonts/malgun.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TF Ponetone Expanded';
+  src: url('/fonts/TF Ponetone Expanded.ttf') format('truetype');
+  font-weight: 600;
+  font-style: bold;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR";
+  letter-spacing: -0.01rem;
+}
+
+html {
+  font-size: 62.5%;
+
+  body {
+    overflow-x: hidden;
+    // height: 500vh;
+    // background-color: #c9c9c9;
+
+    .app-container{
+      &.up {
+        .top_banner {
+          transform: translateY(-110%);
+        }
+        header {
+          top: 0;
+        }
+      }
+    }
+  }
+  section {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding: 13rem 0;
+  }
+  .inner {
+    position: relative;
+    max-width: 144rem;
+    margin: auto;
+    z-index: 0;
+    height: 100%;
+    display: flex;
+    
+  }
+  // &::-webkit-scrollbar {
+  //   width: 5px;
+  //   height: 3px;
+  // }
+
+  // &::-webkit-scrollbar-button {
+  //   display: none;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   background: #DC272D;
+  //   border-radius: 50px;
+  // }
+
+  // &::-webkit-scrollbar-track {
+  //   background-color: #E7E7E7;
+  // }
+
+  ul,
+  ol,
+  dl {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  .con_tit{
+    font-size: 6.6rem;
+    margin: 2rem 0;
+    letter-spacing: 0;
+    font-weight: 600;
+
+    &.large {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+
+
+  .sub-tit{
+    font-size: 3rem;
+    line-height: 2.6rem;
+    color: #0033c3;
+  }
+
+  .txt {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #0033c3;
+
+    &.l_txt {
+      font-size: 2.1rem;
+    }
+  }
+
+  .txt_1 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.5rem;
+    color: #009BDE;
+    line-height: 1;
+  }
+
+  .txt_2 {
+    font-size: 1.9rem;
+    color: #009BDE;
+    letter-spacing: 0;
+  }
+
+  .txt_3 {
+    font-size: 2rem;
+    color: #231F20;
+    font-weight: 500;
+  }
+
+  .txt_4 {
+    font-size: 1.5rem;
+    color: #6f6f6f;
+    margin: 2rem 0 3rem;
+  }
+
+  .txt_5 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .btn_plus{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .con_btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-family: 'TF Ponetone Expanded';
+    color: #0033c3;
+    letter-spacing: 0;
+    overflow: hidden;
+    border: .2rem solid #0033c3;
+    transition: all .3s;
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      transition: all .5s;
+    }
+
+    &:hover {
+      border-color: #0033c3;
+      background: #0033c3;
+      color: #fff;
+
+      &:after {
+        background: transparent;
+        // width: 0%;
+
+      }
+    }
+
+    
+  }
+  @media screen and (max-width:1500px){
+    .inner{
+      padding: 0 2rem;
+    }
+  }
+
+  @media screen and (max-height:1200px) {
+    .con_tit{
+      font-size: 5rem;
+      line-height: 5.2rem;
+    }
+    .sc1 .inner .txt {
+      font-size: 2rem;
+      line-height: 2.6rem;
+    }
+  }
+
+  @media screen and (max-width:999px){
+    .con_tit.large{
+      font-size: 3.6rem;
+      line-height: 4rem;
+    }
+    .con_tit{
+      font-size: 3.3rem;
+      line-height: 3.1rem;
+    }
+    .sc1 .inner .txt {
+      font-size: 1.6rem;
+      line-height: 3rem;
+    }
+    .con_btn{
+      padding: 1rem 1.5rem;
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width:530px){
+    .sub-tit{
+      font-size: 1.5rem;
+    }
+    .con_tit.large{
+      margin: 1rem 0;
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+    .con_tit{
+      font-size: 3.3rem;
+      line-height: 3.1rem;
+    }
+    .txt {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+    .con_btn{
+      padding: .5rem 1rem;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      
+    }
+  }
+}
