@@ -14,7 +14,7 @@
         z-index: 0;
 
         &.hero_s1 {
-            background-image: url(./img/main01.png.);
+            background-image: url('/img/main01.png');
             .t-wrap{
                 h2{
                     color: #fff;
@@ -25,7 +25,7 @@
         }
 
         &.hero_s2 {
-            background-image: url(./img/main02.png);
+            background-image: url('/img/main02.png');
             .t-wrap{
                 h2{
                     color: #fff;
@@ -37,7 +37,7 @@
         }
 
         &.hero_s3 {
-            background-image: url(./img/main03.png);
+            background-image: url('/img/main03.png');
             .t-wrap{
                 h2{
                     color: #fff;
@@ -67,10 +67,10 @@
             padding: 3rem 0 0;
         }
         .arr_prev{
-            background-image: url(./img/slider_prev_btn.svg);
+            background-image: url('/img/slider_prev_btn.svg');
         }
         .arr_next{
-            background-image: url(./img/slider_next_btn.svg);
+            background-image: url('/img/slider_next_btn.svg');
         }
 
         .swiper-pagination{
@@ -112,13 +112,13 @@
         .swiper-slide{
             height: 90rem;
             &.hero_s1{
-                background-image: url(./img/mo-main01.png);
+                background-image: url('/img/mo-main01.png');
             }
             &.hero_s2{
-                background-image: url(./img/mo-main02.png);
+                background-image: url('/img/mo-main02.png');
             }
             &.hero_s3{
-                background-image: url(./img/mo-main03.png);
+                background-image: url('/img/mo-main03.png');
             }
             
         }
